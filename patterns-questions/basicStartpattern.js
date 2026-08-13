@@ -19,7 +19,8 @@ for(let i =0; i<n; i++){
 }
 //  square(4)
 
-//  increase triangle CanvasPattern*
+//  increase triangle CanvasPattern
+// *
 // * *
 // * * *
 // * * * *
@@ -79,4 +80,26 @@ function rightAllignedTrianglePattern(n){
     }
 }
 
-rightAllignedTrianglePattern(4)
+// rightAllignedTrianglePattern(4)
+
+// 1 and 0 pattern 
+
+// 1
+// 1 0
+// 1 0 1
+// 1 0 1 0
+// 1 0 1 0 1
+
+function binaryNumberPattern(n){
+    for(let i = 1; i <= n ; i++){
+        let row = "";
+        for(let j = 1 ; j <= i  ; j++){
+         row = row + j%2;
+        }
+        for(k = 0 ; k <= n-(i+1); k++){
+            row = row + "_";
+        }
+        console.log(row)
+    }
+}
+binaryNumberPattern(10)
