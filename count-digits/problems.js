@@ -3,7 +3,10 @@
 
 
 function countDigits(num){
-    let n = num;
+    if(num === 0) {
+        console.log(0)
+    }
+    let n = Math.abs(num); // to handle negative case number than we just make that number to +ve 
     let count = 0;
     let reminder = 0; 
     while(n > 0){
