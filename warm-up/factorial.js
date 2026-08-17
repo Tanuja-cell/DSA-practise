@@ -1,0 +1,12 @@
+
+
+const factorial=(num)=>{
+    let ans = 1;
+    if(num === 1){
+        return 1;
+    }else{
+     return num * factorial(num-1);
+    }
+}
+
+console.log(factorial(3))
