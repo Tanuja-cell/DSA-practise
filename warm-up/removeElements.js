@@ -1,7 +1,7 @@
 const removeElements=(nums,val)=>{
     let pointerIndex = -1;
     for(let i = 0; i< nums.length; i++){
-       if(nums[i] === val){
+       if(nums[i] !== val){
          nums[pointerIndex+1] = nums[i];
           pointerIndex++;
        }
