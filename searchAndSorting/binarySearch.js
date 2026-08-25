@@ -19,3 +19,4 @@ const binarySearch=(arr,targetElem)=>{
 }
 
 console.log(binarySearch([5],5))
+
