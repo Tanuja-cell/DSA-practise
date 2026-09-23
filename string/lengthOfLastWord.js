@@ -30,4 +30,7 @@ const lengthOfLastWord = (str) => {
     return charCount;
 }
 
+const check = "test".includes("r")
+
+console.log("test", check )
 console.log(lengthOfLastWord("Hello World     "))
